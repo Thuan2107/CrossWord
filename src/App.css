@@ -1,6 +1,35 @@
+.main-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('https://cdn.pixabay.com/photo/2012/04/01/19/49/game-24297_960_720.png');
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the background image covers the entire element */
+  background-position: center; /* Centers the background image */
+  width: 100vw; /* Full viewport width */
+  height: 100vh;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: red;
+  padding: 12px 20px;
+  border-radius: 12px;
+  margin: 0 0 10px 0;
+  font-weight: 900;
+}
+
+.cross-word-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .word-line{
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .invisible {

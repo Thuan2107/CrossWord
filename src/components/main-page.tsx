@@ -7,19 +7,19 @@ interface DataItem {
 
 const MainPage = () => {
     const [dataList, setDataList] = useState<DataItem[]>([
-        { answer: '*chiaSe', isShow: false },
-        { answer: '***tuOngtac', isShow: false },
-        { answer: '*****Congdong', isShow: false },
-        { answer: '***stIcker', isShow: false },
-        { answer: '****bAiviet', isShow: false },
-        { answer: '*binhLuan', isShow: false },
-        { answer: 'xuhuoNg', isShow: false },
-        { answer: '***kiEnthuc', isShow: false },
-        { answer: '*****Thaydoi', isShow: false },
-        { answer: 'folloW', isShow: false },
-        { answer: '***thOngtin', isShow: false },
-        { answer: '***maRketing', isShow: false },
-        { answer: '*****Ketban', isShow: false },
+        { answer: '**chiaSe', isShow: false },
+        { answer: '****tuOngtac', isShow: false },
+        { answer: '******Congdong', isShow: false },
+        { answer: '****stIcker', isShow: false },
+        { answer: '*****bAiviet', isShow: false },
+        { answer: '**binhLuan', isShow: false },
+        { answer: '*xuhuoNg', isShow: false },
+        { answer: '****kiEnthuc', isShow: false },
+        { answer: '******Thaydoi', isShow: false },
+        { answer: '*folloW', isShow: false },
+        { answer: '****thOngtin', isShow: false },
+        { answer: '****maRketing', isShow: false },
+        { answer: '******Ketban', isShow: false },
 
     ]);
 
@@ -32,14 +32,19 @@ const MainPage = () => {
     }
 
     return (
-        <div>
+        <div className='main-page'>
+            <p className='title'>Trò chơi giải mã ô chữ</p>
+            <div className='cross-word-wrapper'>
             {
                 dataList.map((word, index) => (
                     <div key={index} className='word-line'>
+                        <div>Câu số {index + 1}:</div>
+
                         <WordBoxGroup word={word} onClickShowAnswer={() => onClickShowAnswer(index)} />
                     </div>
                 ))
             }
+            </div>
         </div>
     );
 }
