@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/CrossWord/static/css/main.41ddbe6d.css",
-    "main.js": "/CrossWord/static/js/main.bc081cc3.js",
+    "main.css": "/CrossWord/static/css/main.6b9a245e.css",
+    "main.js": "/CrossWord/static/js/main.424dd5d7.js",
     "static/js/453.6432168e.chunk.js": "/CrossWord/static/js/453.6432168e.chunk.js",
     "index.html": "/CrossWord/index.html",
-    "main.41ddbe6d.css.map": "/CrossWord/static/css/main.41ddbe6d.css.map",
-    "main.bc081cc3.js.map": "/CrossWord/static/js/main.bc081cc3.js.map",
+    "main.6b9a245e.css.map": "/CrossWord/static/css/main.6b9a245e.css.map",
+    "main.424dd5d7.js.map": "/CrossWord/static/js/main.424dd5d7.js.map",
     "453.6432168e.chunk.js.map": "/CrossWord/static/js/453.6432168e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.41ddbe6d.css",
-    "static/js/main.bc081cc3.js"
+    "static/css/main.6b9a245e.css",
+    "static/js/main.424dd5d7.js"
   ]
 }
