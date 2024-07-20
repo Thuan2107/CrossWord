@@ -2,12 +2,57 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('https://cdn.pixabay.com/photo/2012/04/01/19/49/game-24297_960_720.png');
-  background-repeat: no-repeat;
-  background-size: cover; /* Ensures the background image covers the entire element */
-  background-position: center; /* Centers the background image */
-  width: 100vw; /* Full viewport width */
-  height: 100vh;
+  background: #ffe5cc;
+  position: relative;
+}
+
+.rules{
+  position: absolute;
+  top: 20px;
+  right: 150px;
+  padding: 8px 12px;
+  background-color: #ff3333;
+  color: #fff;
+  border-radius: 12px;
+}
+
+.rules:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.question-number {
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffb266;
+  border-radius: 50%; 
+  font-weight: 700;
+}
+
+.question-number:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.button-show-question{
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c0c0c0;
+  border-radius: 50%; 
+  font-weight: 700;
+}
+
+.button-show-question:hover{
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .title {
@@ -54,31 +99,75 @@
   align-items: center;
   border-radius: 4px;
   backface-visibility: hidden; /* Ensures the back side is hidden */
-  transition: transform 0.5s; /* Transition for flipping */
+  transition: transform 0.5s;
+  color: #000; /* Transition for flipping */
+  background-color: #ffb266;
 }
 
 .word-box .front {
   transform: rotateY(0deg);
-  background-color: #DEDEDE;
-  color: #fff; /* Adjust styles as needed */
 }
 
 .word-box .back {
   transform: rotateY(180deg);
-  background-color: lightgreen;
-  color: #fff;
-  text-transform: uppercase; /* Adjust styles as needed */
+  text-transform: uppercase;
+  font-weight: 600; /* Adjust styles as needed */
 }
 
 .word-box.flipped .front {
   transform: rotateY(180deg);
+
 }
 
 .word-box.flipped .back {
   transform: rotateY(0deg);
+
 }
 
 .word-box.uppercase-red .back{
-  background-color: red;
+  background-color: #ff3333;
   /* Thay đổi màu nền mà bạn muốn */
 }
+
+/* src/Dialog.css */
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  background: white;
+  border-radius: 8px;
+  width: auto;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.dialog-content {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+

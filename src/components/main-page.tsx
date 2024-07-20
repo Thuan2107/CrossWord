@@ -1,29 +1,65 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import Dialog from './dialog-show-image';
+import question1 from '../images/question1.png'
+import question2 from '../images/question2.png'
+import question3 from '../images/question3.png'
+import question4 from '../images/question4.png'
+import question5 from '../images/question5.png'
+import question6 from '../images/question6.png'
+import question7 from '../images/question7.png'
+import question8 from '../images/question8.png'
+import question9 from '../images/question9.png'
+import question10 from '../images/question10.png'
+import question11 from '../images/question11.png'
+import question12 from '../images/question12.png'
+import question13 from '../images/question13.png'
+import rules from '../images/rules.png'
+
 
 interface DataItem {
     answer: string;
     isShow: boolean;
+    question: string
 }
 
 const MainPage = () => {
     const [dataList, setDataList] = useState<DataItem[]>([
-        { answer: '**chiaSe', isShow: false },
-        { answer: '****tuOngtac', isShow: false },
-        { answer: '******Congdong', isShow: false },
-        { answer: '****stIcker', isShow: false },
-        { answer: '*****bAiviet', isShow: false },
-        { answer: '**binhLuan', isShow: false },
-        { answer: '*xuhuoNg', isShow: false },
-        { answer: '****kiEnthuc', isShow: false },
-        { answer: '******Thaydoi', isShow: false },
-        { answer: '*folloW', isShow: false },
-        { answer: '****thOngtin', isShow: false },
-        { answer: '****maRketing', isShow: false },
-        { answer: '******Ketban', isShow: false },
+        { answer: '**chiaSe', isShow: false, question: question1 },
+        { answer: '****tuOngtac', isShow: false, question: question2 },
+        { answer: '******Congdong', isShow: false, question: question3 },
+        { answer: '****stIcker', isShow: false, question: question4 },
+        { answer: '*****bAiviet', isShow: false, question: question5 },
+        { answer: '**binhLuan', isShow: false, question: question6 },
+        { answer: '*xuhuoNg', isShow: false, question: question7 },
+        { answer: '****kiEnthuc', isShow: false, question: question8 },
+        { answer: '******Thaydoi', isShow: false, question: question9 },
+        { answer: '*folloW', isShow: false, question: question10 },
+        { answer: '****thOngtin', isShow: false, question: question11 },
+        { answer: '****maRketing', isShow: false, question: question12 },
+        { answer: '******Ketban', isShow: false, question: question13 },
+        { answer: '', isShow: false, question: rules },
 
     ]);
 
+    const [isDialogOpen, setIsDialogOpen] = useState(false);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isRules, setIsRules] = useState(false);
+
+    
+    
+
+    const openDialog = (index: number) => {
+        setIsDialogOpen(true);
+        setIsRules(index == 13 ? true : false)
+        setCurrentIndex(index)
+    };
+
+    const closeDialog = () => {
+        setIsDialogOpen(false);
+    };
+
     const onClickShowAnswer = (index: number) => {
+        console.log("clickanswer", index)
         setDataList(prevDataList => {
             const newDataList = [...prevDataList];
             newDataList[index].isShow = !newDataList[index].isShow;
@@ -33,18 +69,31 @@ const MainPage = () => {
 
     return (
         <div className='main-page'>
+            <div className='rules' onClick={() => openDialog(13)}>Thể lệ</div>
             <p className='title'>Trò chơi giải mã ô chữ</p>
             <div className='cross-word-wrapper'>
             {
                 dataList.map((word, index) => (
+                    index < 13 &&
                     <div key={index} className='word-line'>
-                        <div>Câu số {index + 1}:</div>
-
+                        <div style={{display: 'flex', gap: '4px', alignItems: 'center'}}>
+                            <div 
+                                className="question-number"
+                                onClick={() => onClickShowAnswer(index)}>{index + 1}</div>
+                            <div 
+                                className="button-show-question"
+                                onClick={() => openDialog(index)}
+                               >?</div>
+                        </div>
                         <WordBoxGroup word={word} onClickShowAnswer={() => onClickShowAnswer(index)} />
                     </div>
                 ))
             }
             </div>
+            <Dialog isOpen={isDialogOpen} title={isRules ? '' : `Câu ${currentIndex + 1}`} onClose={closeDialog}>
+                <img src={dataList[currentIndex].question} />
+            </Dialog>
+
         </div>
     );
 }
@@ -110,9 +159,9 @@ const WordBoxGroup: React.FC<WordBoxGroupProps> = ({ word, onClickShowAnswer }) 
                     />
                 ))
             }
-            <div className='button-show' onClick={onClickShowAnswer}>
+            {/* <div className='button-show' onClick={onClickShowAnswer}>
                 {word.isShow ? "An dap an" : "Hien dap an"}
-            </div>
+            </div> */}
         </>
     );
 }
