@@ -111,6 +111,7 @@
 .word-box .back {
   transform: rotateY(180deg);
   text-transform: uppercase;
+
   font-weight: 600; /* Adjust styles as needed */
 }
 
@@ -124,7 +125,8 @@
 
 }
 
-.word-box.uppercase-red .back{
+.word-box.uppercase-red .back,
+.word-box.uppercase-red .front{
   background-color: #ff3333;
   /* Thay đổi màu nền mà bạn muốn */
 }
