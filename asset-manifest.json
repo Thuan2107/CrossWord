@@ -1,15 +1,29 @@
 {
   "files": {
-    "main.css": "/CrossWord/static/css/main.6b9a245e.css",
-    "main.js": "/CrossWord/static/js/main.424dd5d7.js",
+    "main.css": "/CrossWord/static/css/main.4e264ebb.css",
+    "main.js": "/CrossWord/static/js/main.51a417f4.js",
     "static/js/453.6432168e.chunk.js": "/CrossWord/static/js/453.6432168e.chunk.js",
+    "static/media/question7.png": "/CrossWord/static/media/question7.e2df9fb3f5ac860f7715.png",
+    "static/media/question2.png": "/CrossWord/static/media/question2.ae2db67f1c869a77a891.png",
+    "static/media/question11.png": "/CrossWord/static/media/question11.e47165abe742e29534bc.png",
+    "static/media/question1.png": "/CrossWord/static/media/question1.ee7679f833c5416156a0.png",
+    "static/media/question6.png": "/CrossWord/static/media/question6.7ed480d1a61e5279373d.png",
+    "static/media/question5.png": "/CrossWord/static/media/question5.471651fb635c31768b5f.png",
+    "static/media/question10.png": "/CrossWord/static/media/question10.8c2e235e5a54155abc4d.png",
+    "static/media/question13.png": "/CrossWord/static/media/question13.dc754008a445f103b8c5.png",
+    "static/media/question9.png": "/CrossWord/static/media/question9.0a7c646545cce6ad1454.png",
+    "static/media/question8.png": "/CrossWord/static/media/question8.611566ac55b96bec514c.png",
+    "static/media/rules.png": "/CrossWord/static/media/rules.4a15110355af878621ce.png",
+    "static/media/question12.png": "/CrossWord/static/media/question12.66c8f1dcc01ed55cb740.png",
+    "static/media/question3.png": "/CrossWord/static/media/question3.e88c863ae2fecff365e1.png",
+    "static/media/question4.png": "/CrossWord/static/media/question4.5ed5aa1a10a8427135c7.png",
     "index.html": "/CrossWord/index.html",
-    "main.6b9a245e.css.map": "/CrossWord/static/css/main.6b9a245e.css.map",
-    "main.424dd5d7.js.map": "/CrossWord/static/js/main.424dd5d7.js.map",
+    "main.4e264ebb.css.map": "/CrossWord/static/css/main.4e264ebb.css.map",
+    "main.51a417f4.js.map": "/CrossWord/static/js/main.51a417f4.js.map",
     "453.6432168e.chunk.js.map": "/CrossWord/static/js/453.6432168e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b9a245e.css",
-    "static/js/main.424dd5d7.js"
+    "static/css/main.4e264ebb.css",
+    "static/js/main.51a417f4.js"
   ]
 }
