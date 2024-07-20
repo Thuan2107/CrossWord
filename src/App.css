@@ -173,3 +173,13 @@
   justify-content: center;
 }
 
+.clock{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -210px;
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+}
+

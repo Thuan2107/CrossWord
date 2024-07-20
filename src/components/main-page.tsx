@@ -14,6 +14,8 @@ import question11 from '../images/question11.png'
 import question12 from '../images/question12.png'
 import question13 from '../images/question13.png'
 import rules from '../images/rules.png'
+import clockVideo from '../images/clock-30s.mp4'
+import olympia30s from '../images/tangtoc30s.mp4'
 
 
 interface DataItem {
@@ -91,8 +93,20 @@ const MainPage = () => {
             }
             </div>
             <Dialog isOpen={isDialogOpen} title={isRules ? '' : `Câu ${currentIndex + 1}`} onClose={closeDialog}>
-                <img src={dataList[currentIndex].question} />
+                <img src={dataList[currentIndex].question}  />
+                {!isRules && 
+                 <div>
+                    <video className='clock' autoPlay>
+                        <source src={clockVideo} type="video/mp4" />
+                    </video>
+                    
+                    <video className='clock' autoPlay style={{opacity: '0'}}>
+                        <source src={olympia30s} type="video/mp4" />
+                    </video>
+                 </div>
+                }
             </Dialog>
+
 
         </div>
     );
