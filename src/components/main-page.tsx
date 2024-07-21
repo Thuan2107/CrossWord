@@ -1,19 +1,20 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Dialog from './dialog-show-image';
-import question1 from '../images/question1.png'
-import question2 from '../images/question2.png'
-import question3 from '../images/question3.png'
-import question4 from '../images/question4.png'
-import question5 from '../images/question5.png'
-import question6 from '../images/question6.png'
-import question7 from '../images/question7.png'
-import question8 from '../images/question8.png'
-import question9 from '../images/question9.png'
-import question10 from '../images/question10.png'
-import question11 from '../images/question11.png'
-import question12 from '../images/question12.png'
-import question13 from '../images/question13.png'
+import question1 from '../images/chiase.gif'
+import question2 from '../images/tuongtac.gif'
+import question3 from '../images/congdong.gif'
+import question4 from '../images/sticker.gif'
+import question5 from '../images/baiviet.gif'
+import question6 from '../images/binhluan.gif'
+import question7 from '../images/xuhuong.gif'
+import question8 from '../images/kienthuc.gif'
+import question9 from '../images/thaydoi.gif'
+import question10 from '../images/follow.gif'
+import question11 from '../images/thongtin.gif'
+import question12 from '../images/marketing.gif'
+import question13 from '../images/ketban.gif'
 import rules from '../images/rules.png'
+import rulesSound from '../images/rules.mp4'
 import clockVideo from '../images/clock-30s.mp4'
 import olympia30s from '../images/tangtoc30s.mp4'
 
@@ -64,7 +65,7 @@ const MainPage = () => {
         console.log("clickanswer", index)
         setDataList(prevDataList => {
             const newDataList = [...prevDataList];
-            newDataList[index].isShow = !newDataList[index].isShow;
+            newDataList[index].isShow = true;
             return newDataList;
         });
     }
@@ -78,24 +79,29 @@ const MainPage = () => {
                 dataList.map((word, index) => (
                     index < 13 &&
                     <div key={index} className='word-line'>
-                        <div style={{display: 'flex', gap: '4px', alignItems: 'center'}}>
+                        <div style={{display: 'flex', gap: '20px', alignItems: 'center', justifyContent: 'space-between'}}>
                             <div 
+                                style={{flex: '2'}}
                                 className="question-number"
                                 onClick={() => onClickShowAnswer(index)}>{index + 1}</div>
+                            <div style={{flex: '8'}}  className='word-line'>
+                                <WordBoxGroup word={word} onClickShowAnswer={() => onClickShowAnswer(index)} />
+                            </div>
                             <div 
+                                style={{flex: '2'}}
                                 className="button-show-question"
                                 onClick={() => openDialog(index)}
                                >?</div>
                         </div>
-                        <WordBoxGroup word={word} onClickShowAnswer={() => onClickShowAnswer(index)} />
+                       
                     </div>
                 ))
             }
             </div>
             <Dialog isOpen={isDialogOpen} title={isRules ? '' : `Câu ${currentIndex + 1}`} onClose={closeDialog}>
-                <img src={dataList[currentIndex].question}  />
-                {!isRules && 
-                 <div>
+                <img src={dataList[currentIndex].question} style={{width: '100%', height: 'auto'}}  />
+                {!isRules 
+                ? <div>
                     <video className='clock' autoPlay>
                         <source src={clockVideo} type="video/mp4" />
                     </video>
@@ -104,6 +110,9 @@ const MainPage = () => {
                         <source src={olympia30s} type="video/mp4" />
                     </video>
                  </div>
+                 : <video className='clock' autoPlay style={{opacity: '0'}}>
+                        <source src={rulesSound} type="video/mp4" />
+                    </video>
                 }
             </Dialog>
 
