@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CrossWord/static/css/main.c5be4a06.css",
+    "main.css": "/CrossWord/static/css/main.e6ae3f81.css",
     "main.js": "/CrossWord/static/js/main.545e9f4d.js",
     "static/js/453.6e3fece8.chunk.js": "/CrossWord/static/js/453.6e3fece8.chunk.js",
     "static/media/rules.mp4": "/CrossWord/static/media/rules.1a09bf6ce8f0fe4af721.mp4",
@@ -25,12 +25,12 @@
     "static/media/gift.png": "/CrossWord/static/media/gift.48a4119681ae55e0e6bd.png",
     "static/media/oshicay.png": "/CrossWord/static/media/oshicay.df4b52cedd469c9f9b8b.png",
     "index.html": "/CrossWord/index.html",
-    "main.c5be4a06.css.map": "/CrossWord/static/css/main.c5be4a06.css.map",
+    "main.e6ae3f81.css.map": "/CrossWord/static/css/main.e6ae3f81.css.map",
     "main.545e9f4d.js.map": "/CrossWord/static/js/main.545e9f4d.js.map",
     "453.6e3fece8.chunk.js.map": "/CrossWord/static/js/453.6e3fece8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5be4a06.css",
+    "static/css/main.e6ae3f81.css",
     "static/js/main.545e9f4d.js"
   ]
 }
