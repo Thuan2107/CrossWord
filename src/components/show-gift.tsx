@@ -1,6 +1,7 @@
 
 import React, { useEffect } from 'react';
 import showGift from '../images/sound-gift.mp4'
+import Confetti from 'react-confetti';
 
 
 interface DialogProps {
@@ -34,7 +35,7 @@ const ShowGift: React.FC<DialogProps> = ({ isOpen, title, image, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="dialog-overlay-gift" onClick={onClose}>
+    <div className="dialog-overlay-gift " onClick={onClose}>
       <div className="dialog-gift" onClick={(e) => e.stopPropagation()}>
         <div className="dialog-header">
           <p style={{fontWeight: '900', fontSize: '20px'}}>{title}</p>
@@ -56,6 +57,7 @@ const ShowGift: React.FC<DialogProps> = ({ isOpen, title, image, onClose }) => {
       <video className='clock' autoPlay style={{opacity: '0'}}>
           <source src={showGift} type="video/mp4" />
       </video>
+      <Confetti />
     </div>
   );
 };

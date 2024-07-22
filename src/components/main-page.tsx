@@ -27,25 +27,26 @@ import oshi from '../images/tiger.png'
 interface DataItem {
     answer: string;
     isShow: boolean;
-    question: string
+    question: string;
+    gift: string;
 }
 
 const MainPage = () => {
     const [dataList, setDataList] = useState<DataItem[]>([
-        { answer: '**chiaSe', isShow: false, question: question1 },
-        { answer: '****tuOngtac', isShow: false, question: question2 },
-        { answer: '******Congdong', isShow: false, question: question3 },
-        { answer: '****stIcker', isShow: false, question: question4 },
-        { answer: '*****bAiviet', isShow: false, question: question5 },
-        { answer: '**binhLuan', isShow: false, question: question6 },
-        { answer: '*xuhuoNg', isShow: false, question: question7 },
-        { answer: '****kiEnthuc', isShow: false, question: question8 },
-        { answer: '******Thaydoi', isShow: false, question: question9 },
-        { answer: '*folloW', isShow: false, question: question10 },
-        { answer: '****thOngtin', isShow: false, question: question11 },
-        { answer: '****maRketing', isShow: false, question: question12 },
-        { answer: '******Ketban', isShow: false, question: question13 },
-        { answer: '', isShow: false, question: rules },
+        { answer: '**chiaSe', isShow: false, question: question1, gift: oshi },
+        { answer: '****tuOngtac', isShow: false, question: question2, gift: oshi },
+        { answer: '******Congdong', isShow: false, question: question3, gift: oshi },
+        { answer: '****stIcker', isShow: false, question: question4, gift: oshi },
+        { answer: '*****bAiviet', isShow: false, question: question5, gift: oshi },
+        { answer: '**binhLuan', isShow: false, question: question6, gift: oshi },
+        { answer: '*xuhuoNg', isShow: false, question: question7, gift: oshi },
+        { answer: '****kiEnthuc', isShow: false, question: question8, gift: oshi },
+        { answer: '******Thaydoi', isShow: false, question: question9, gift: oshi },
+        { answer: '*folloW', isShow: false, question: question10, gift: oshi },
+        { answer: '****thOngtin', isShow: false, question: question11, gift: oshi },
+        { answer: '****maRketing', isShow: false, question: question12, gift: oshi },
+        { answer: '******Ketban', isShow: false, question: question13, gift: oshi },
+        { answer: '', isShow: false, question: rules, gift: "" },
 
     ]);
 
@@ -140,7 +141,7 @@ const MainPage = () => {
                     </video>
                 }
             </Dialog>
-            <ShowGift isOpen={isGiftOpen} title="" image={oshi} onClose={closeGift} />
+            <ShowGift isOpen={isGiftOpen} title="" image={dataList[currentIndex].gift} onClose={closeGift} />
 
             <video ref={videoRef} style={{ display: 'none' }}>
                 <source src={flipSound} type="video/mp4" />
