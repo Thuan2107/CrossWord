@@ -25,6 +25,11 @@ import ball from '../images/ball.png'
 import chicken from '../images/chicken.png'
 import yonex from '../images/yonex.png'
 import taycam from '../images/taycam.png'
+import candy from '../images/candy.png'
+import migoi from '../images/midenhat.png'
+import xucxich from '../images/xucxich.png'
+import milk from '../images/milk.png'
+import lays from '../images/lays.png'
 
 
 
@@ -38,15 +43,15 @@ interface DataItem {
 const MainPage = () => {
     const [dataList, setDataList] = useState<DataItem[]>([
         { answer: '**chiaSe', isShow: false, question: question1, gift: tiger },
-        { answer: '****tuOngtac', isShow: false, question: question2, gift: ball },
+        { answer: '****tuOngtac', isShow: false, question: question2, gift: milk },
         { answer: '******Congdong', isShow: false, question: question3, gift: yonex },
-        { answer: '****stIcker', isShow: false, question: question4, gift: taycam },
+        { answer: '****stIcker', isShow: false, question: question4, gift: xucxich },
         { answer: '*****bAiviet', isShow: false, question: question5, gift: chicken },
-        { answer: '**binhLuan', isShow: false, question: question6, gift: tiger },
-        { answer: '*xuhuoNg', isShow: false, question: question7, gift: ball },
-        { answer: '****kiEnthuc', isShow: false, question: question8, gift: yonex },
-        { answer: '******Thaydoi', isShow: false, question: question9, gift: taycam },
-        { answer: '*folloW', isShow: false, question: question10, gift: chicken },
+        { answer: '**binhLuan', isShow: false, question: question6, gift: candy },
+        { answer: '*xuhuoNg', isShow: false, question: question7, gift: migoi },
+        { answer: '****kiEnthuc', isShow: false, question: question8, gift: taycam },
+        { answer: '******Thaydoi', isShow: false, question: question9, gift: lays },
+        { answer: '*folloW', isShow: false, question: question10, gift: ball },
         { answer: '****thOngtin', isShow: false, question: question11, gift: tiger },
         { answer: '****maRketing', isShow: false, question: question12, gift: ball },
         { answer: '******Ketban', isShow: false, question: question13, gift: tiger },
@@ -77,6 +82,11 @@ const MainPage = () => {
             tiger,
             ball,
             tiger,
+            candy,
+            migoi,
+            xucxich,
+            milk,
+            lays,
             question1,
             question2,
             question3,

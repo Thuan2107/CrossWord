@@ -6,6 +6,7 @@
   align-items: center;
   background: #fffced;
   position: relative;
+  margin-bottom: 100px;
 }
 
 .rules{
@@ -331,6 +332,10 @@
 @keyframes img-animate {
   0% {
     transform: translateY(0);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-100px);
     opacity: 0;
   }
   100% {
