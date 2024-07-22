@@ -51,8 +51,55 @@ const MainPage = () => {
         { answer: '****maRketing', isShow: false, question: question12, gift: ball },
         { answer: '******Ketban', isShow: false, question: question13, gift: tiger },
         { answer: '', isShow: false, question: rules, gift: "" },
-
     ]);
+
+    const preloadImage = (src: string) => {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.src = src;
+          img.onload = resolve;
+          img.onerror = reject;
+        });
+      };
+
+    useEffect(() => {
+        const imageSources = [
+            tiger,
+            ball,
+            yonex,
+            taycam,
+            chicken,
+            tiger,
+            ball,
+            yonex,
+            taycam,
+            chicken,
+            tiger,
+            ball,
+            tiger,
+            question1,
+            question2,
+            question3,
+            question4,
+            question5,
+            question6,
+            question7,
+            question8,
+            question9,
+            question10,
+            question11,
+            question12,
+            question13,
+        ];
+    
+        Promise.all(imageSources.map(src => preloadImage(src)))
+          .then(() => {
+            console.log('All images have been loaded');
+          })
+          .catch(err => {
+            console.error('Failed to load images', err);
+          });
+      }, []);
 
     const [isDialogOpen, setIsDialogOpen] = useState(false);
     const [isGiftOpen, setIsGiftOpen] = useState(false);
