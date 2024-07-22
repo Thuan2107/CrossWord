@@ -30,6 +30,9 @@ import migoi from '../images/midenhat.png'
 import xucxich from '../images/xucxich.png'
 import milk from '../images/milk.png'
 import lays from '../images/lays.png'
+import oreo from '../images/oreos.png'
+import lavie from '../images/lavie.png'
+import sunsilk from '../images/sunsilk.png'
 
 
 
@@ -52,9 +55,9 @@ const MainPage = () => {
         { answer: '****kiEnthuc', isShow: false, question: question8, gift: taycam },
         { answer: '******Thaydoi', isShow: false, question: question9, gift: lays },
         { answer: '*folloW', isShow: false, question: question10, gift: ball },
-        { answer: '****thOngtin', isShow: false, question: question11, gift: tiger },
-        { answer: '****maRketing', isShow: false, question: question12, gift: ball },
-        { answer: '******Ketban', isShow: false, question: question13, gift: tiger },
+        { answer: '****thOngtin', isShow: false, question: question11, gift: oreo },
+        { answer: '****maRketing', isShow: false, question: question12, gift: lavie },
+        { answer: '******Ketban', isShow: false, question: question13, gift: sunsilk },
         { answer: '', isShow: false, question: rules, gift: "" },
     ]);
 
@@ -87,6 +90,9 @@ const MainPage = () => {
             xucxich,
             milk,
             lays,
+            oreo,
+            lavie,
+            sunsilk,
             question1,
             question2,
             question3,
