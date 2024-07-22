@@ -1,6 +1,6 @@
 .main-page{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,11 +104,11 @@
   backface-visibility: hidden; /* Ensures the back side is hidden */
   transition: transform 0.5s;
   color: #000; /* Transition for flipping */
-  border: 3px solid #eec559;
 }
 
 .word-box .front {
   transform: rotateY(0deg);
+  background-color: #eec559 ;
 }
 
 .word-box .back {
@@ -116,10 +116,12 @@
   text-transform: uppercase;
   font-size: 36px;
   font-weight: 600; /* Adjust styles as needed */
+  border: 3px solid #eec559;
 }
 
 .word-box.flipped .front {
   transform: rotateY(180deg);
+
 
 }
 
@@ -128,11 +130,11 @@
 
 }
 
-.word-box.uppercase-red .back,
-.word-box.uppercase-red .front{
+.word-box.uppercase-red .back{
   border: 3px solid #329e3b;
-
-  /* Thay đổi màu nền mà bạn muốn */
+}
+.word-box.uppercase-red .front{
+  background-color: #329e3b;
 }
 
 /* src/Dialog.css */

@@ -17,6 +17,7 @@ import rules from '../images/rules.png'
 import rulesSound from '../images/rules.mp4'
 import clockVideo from '../images/clock-30s.mp4'
 import olympia30s from '../images/tangtoc30s.mp4'
+import flipSound from '../images/sound-correct.mp4'
 
 
 interface DataItem {
@@ -47,7 +48,7 @@ const MainPage = () => {
     const [isDialogOpen, setIsDialogOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isRules, setIsRules] = useState(false);
-
+    const videoRef = useRef<HTMLVideoElement | null>(null);
     
     
 
@@ -63,6 +64,13 @@ const MainPage = () => {
 
     const onClickShowAnswer = (index: number) => {
         console.log("clickanswer", index)
+        if (videoRef.current) {
+            videoRef.current.pause(); // Pause the video
+            videoRef.current.currentTime = 0; // Reset to the beginning
+            setTimeout(() => {
+                videoRef.current?.play(); // Play the video after 1 second delay
+            }, 500);  // Play the video
+        }
         setDataList(prevDataList => {
             const newDataList = [...prevDataList];
             newDataList[index].isShow = true;
@@ -115,7 +123,9 @@ const MainPage = () => {
                     </video>
                 }
             </Dialog>
-
+            <video ref={videoRef} style={{ display: 'none' }}>
+                <source src={flipSound} type="video/mp4" />
+            </video>
 
         </div>
     );
@@ -135,7 +145,7 @@ const WordBox: React.FC<WordBoxProps> = ({ character, isFlipped, delay }) => {
             className={`word-box ${isFlipped ? 'flipped' : ''} ${isVisible ? '' : 'invisible'} ${isUppercase ? 'uppercase-red' : ''}`}
             style={{ transitionDelay: `${delay}s` }}
         >
-            <div className='front'>?</div>
+            <div className='front'></div>
             <div className='back'>{character}</div>
         </div>
     );
@@ -159,7 +169,7 @@ const WordBoxGroup: React.FC<WordBoxGroupProps> = ({ word, onClickShowAnswer }) 
                 word.answer.slice(startFlipIndex).split('').forEach((_, index) => {
                     const timeoutId = setTimeout(() => {
                         setFlippedIndexes(prevIndexes => [...prevIndexes, startFlipIndex + index]);
-                    }, 500 + index * 500); // Lật từng ô sau mỗi 0.5s
+                    }, 300 + index * 300); // Lật từng ô sau mỗi 0.5s
                     timeoutIds.push(timeoutId);
                 });
 
@@ -178,13 +188,14 @@ const WordBoxGroup: React.FC<WordBoxGroupProps> = ({ word, onClickShowAnswer }) 
                         key={index}
                         character={character}
                         isFlipped={flippedIndexes.includes(index)}
-                        delay={index * 0.5} // Adjust delay here
+                        delay={index * 0.3} // Adjust delay here
                     />
                 ))
             }
             {/* <div className='button-show' onClick={onClickShowAnswer}>
                 {word.isShow ? "An dap an" : "Hien dap an"}
             </div> */}
+           
         </>
     );
 }
