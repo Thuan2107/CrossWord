@@ -210,14 +210,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgba(0, 0, 0, 0.1);
 }
 
-.dialog {
+.dialog-gift {
   background: transparent;
   border-radius: 8px;
-  width: 60%;
-  padding: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
