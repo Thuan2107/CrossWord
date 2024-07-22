@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CrossWord/static/css/main.346269a4.css",
-    "main.js": "/CrossWord/static/js/main.ecdd4cbb.js",
+    "main.css": "/CrossWord/static/css/main.7a822111.css",
+    "main.js": "/CrossWord/static/js/main.1705727b.js",
     "static/js/453.6e3fece8.chunk.js": "/CrossWord/static/js/453.6e3fece8.chunk.js",
     "static/media/rules.mp4": "/CrossWord/static/media/rules.1a09bf6ce8f0fe4af721.mp4",
     "static/media/clock-30s.mp4": "/CrossWord/static/media/clock-30s.b508a72b124a0ac744d9.mp4",
@@ -20,13 +20,14 @@
     "static/media/tuongtac.gif": "/CrossWord/static/media/tuongtac.4379880012574135653e.gif",
     "static/media/sticker.gif": "/CrossWord/static/media/sticker.d07187499f71836f14be.gif",
     "static/media/rules.png": "/CrossWord/static/media/rules.4a15110355af878621ce.png",
+    "static/media/sound-correct.mp4": "/CrossWord/static/media/sound-correct.b5e6f83c9139b94b575a.mp4",
     "index.html": "/CrossWord/index.html",
-    "main.346269a4.css.map": "/CrossWord/static/css/main.346269a4.css.map",
-    "main.ecdd4cbb.js.map": "/CrossWord/static/js/main.ecdd4cbb.js.map",
+    "main.7a822111.css.map": "/CrossWord/static/css/main.7a822111.css.map",
+    "main.1705727b.js.map": "/CrossWord/static/js/main.1705727b.js.map",
     "453.6e3fece8.chunk.js.map": "/CrossWord/static/js/453.6e3fece8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.346269a4.css",
-    "static/js/main.ecdd4cbb.js"
+    "static/css/main.7a822111.css",
+    "static/js/main.1705727b.js"
   ]
 }
