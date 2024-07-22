@@ -21,10 +21,10 @@ import flipSound from '../images/sound-correct.mp4'
 import Dialog from './dialog-show-image';
 import ShowGift from './show-gift';
 import tiger from '../images/tiger.png'
-import ball from '../images/ball.webp'
-import chicken from '../images/chicken.webp'
-import yonex from '../images/yonex.webp'
-import taycam from '../images/taycam.webp'
+import ball from '../images/ball.png'
+import chicken from '../images/chicken.png'
+import yonex from '../images/yonex.png'
+import taycam from '../images/taycam.png'
 
 
 
