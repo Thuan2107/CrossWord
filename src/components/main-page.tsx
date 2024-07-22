@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Dialog from './dialog-show-image';
 import question1 from '../images/chiase.gif'
 import question2 from '../images/tuongtac.gif'
 import question3 from '../images/congdong.gif'
@@ -13,11 +12,16 @@ import question10 from '../images/follow.gif'
 import question11 from '../images/thongtin.gif'
 import question12 from '../images/marketing.gif'
 import question13 from '../images/ketban.gif'
+import iconGift from '../images/gift.png'
 import rules from '../images/rules.png'
 import rulesSound from '../images/rules.mp4'
 import clockVideo from '../images/clock-30s.mp4'
 import olympia30s from '../images/tangtoc30s.mp4'
 import flipSound from '../images/sound-correct.mp4'
+import Dialog from './dialog-show-image';
+import ShowGift from './show-gift';
+import oshi from '../images/oshicay.png'
+
 
 
 interface DataItem {
@@ -46,6 +50,7 @@ const MainPage = () => {
     ]);
 
     const [isDialogOpen, setIsDialogOpen] = useState(false);
+    const [isGiftOpen, setIsGiftOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isRules, setIsRules] = useState(false);
     const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -58,8 +63,17 @@ const MainPage = () => {
         setCurrentIndex(index)
     };
 
+    const openGift = (index: number) => {
+        setIsGiftOpen(true);
+        setCurrentIndex(index)
+    };
+
     const closeDialog = () => {
         setIsDialogOpen(false);
+    };
+
+    const closeGift = () => {
+        setIsGiftOpen(false);
     };
 
     const onClickShowAnswer = (index: number) => {
@@ -92,6 +106,9 @@ const MainPage = () => {
                                 style={{flex: '2'}}
                                 className="question-number"
                                 onClick={() => onClickShowAnswer(index)}>{index + 1}</div>
+                            <div className='gift-box' onClick={() => openGift(index)}>
+                                <img src={iconGift} />
+                            </div>
                             <div style={{flex: '8'}}  className='word-line'>
                                 <WordBoxGroup word={word} onClickShowAnswer={() => onClickShowAnswer(index)} />
                             </div>
@@ -123,6 +140,8 @@ const MainPage = () => {
                     </video>
                 }
             </Dialog>
+            <ShowGift isOpen={isGiftOpen} title="" image={oshi} onClose={closeGift} />
+
             <video ref={videoRef} style={{ display: 'none' }}>
                 <source src={flipSound} type="video/mp4" />
             </video>
