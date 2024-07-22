@@ -20,7 +20,11 @@ import olympia30s from '../images/tangtoc30s.mp4'
 import flipSound from '../images/sound-correct.mp4'
 import Dialog from './dialog-show-image';
 import ShowGift from './show-gift';
-import oshi from '../images/tiger.png'
+import tiger from '../images/tiger.png'
+import ball from '../images/ball.webp'
+import chicken from '../images/chicken.webp'
+import yonex from '../images/yonex.webp'
+import taycam from '../images/taycam.webp'
 
 
 
@@ -33,19 +37,19 @@ interface DataItem {
 
 const MainPage = () => {
     const [dataList, setDataList] = useState<DataItem[]>([
-        { answer: '**chiaSe', isShow: false, question: question1, gift: oshi },
-        { answer: '****tuOngtac', isShow: false, question: question2, gift: oshi },
-        { answer: '******Congdong', isShow: false, question: question3, gift: oshi },
-        { answer: '****stIcker', isShow: false, question: question4, gift: oshi },
-        { answer: '*****bAiviet', isShow: false, question: question5, gift: oshi },
-        { answer: '**binhLuan', isShow: false, question: question6, gift: oshi },
-        { answer: '*xuhuoNg', isShow: false, question: question7, gift: oshi },
-        { answer: '****kiEnthuc', isShow: false, question: question8, gift: oshi },
-        { answer: '******Thaydoi', isShow: false, question: question9, gift: oshi },
-        { answer: '*folloW', isShow: false, question: question10, gift: oshi },
-        { answer: '****thOngtin', isShow: false, question: question11, gift: oshi },
-        { answer: '****maRketing', isShow: false, question: question12, gift: oshi },
-        { answer: '******Ketban', isShow: false, question: question13, gift: oshi },
+        { answer: '**chiaSe', isShow: false, question: question1, gift: tiger },
+        { answer: '****tuOngtac', isShow: false, question: question2, gift: ball },
+        { answer: '******Congdong', isShow: false, question: question3, gift: yonex },
+        { answer: '****stIcker', isShow: false, question: question4, gift: taycam },
+        { answer: '*****bAiviet', isShow: false, question: question5, gift: chicken },
+        { answer: '**binhLuan', isShow: false, question: question6, gift: tiger },
+        { answer: '*xuhuoNg', isShow: false, question: question7, gift: ball },
+        { answer: '****kiEnthuc', isShow: false, question: question8, gift: yonex },
+        { answer: '******Thaydoi', isShow: false, question: question9, gift: taycam },
+        { answer: '*folloW', isShow: false, question: question10, gift: chicken },
+        { answer: '****thOngtin', isShow: false, question: question11, gift: tiger },
+        { answer: '****maRketing', isShow: false, question: question12, gift: ball },
+        { answer: '******Ketban', isShow: false, question: question13, gift: tiger },
         { answer: '', isShow: false, question: rules, gift: "" },
 
     ]);
