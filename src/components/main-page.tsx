@@ -20,7 +20,7 @@ import olympia30s from '../images/tangtoc30s.mp4'
 import flipSound from '../images/sound-correct.mp4'
 import Dialog from './dialog-show-image';
 import ShowGift from './show-gift';
-import oshi from '../images/oshicay.png'
+import oshi from '../images/tiger.png'
 
 
 
