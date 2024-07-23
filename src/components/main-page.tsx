@@ -33,6 +33,7 @@ import lays from '../images/lays.png'
 import oreo from '../images/oreos.png'
 import lavie from '../images/lavie.png'
 import sunsilk from '../images/sunsilk.png'
+import gameTitle from '../images/game-title.png'
 
 
 
@@ -106,6 +107,7 @@ const MainPage = () => {
             question11,
             question12,
             question13,
+            gameTitle
         ];
     
         Promise.all(imageSources.map(src => preloadImage(src)))
@@ -163,7 +165,8 @@ const MainPage = () => {
     return (
         <div className='main-page'>
             <div className='rules' onClick={() => openDialog(13)}>Thể lệ</div>
-            <p className='title'>Trò chơi giải mã ô chữ</p>
+            {/* <p className='title'>Trò chơi giải mã ô chữ</p> */}
+            <img className='title' src={gameTitle} />
             <div className='cross-word-wrapper'>
             {
                 dataList.map((word, index) => (
