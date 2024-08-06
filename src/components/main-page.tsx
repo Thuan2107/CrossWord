@@ -20,20 +20,20 @@ import olympia30s from '../images/tangtoc30s.mp4'
 import flipSound from '../images/sound-correct.mp4'
 import Dialog from './dialog-show-image';
 import ShowGift from './show-gift';
-import tiger from '../images/tiger.png'
-import ball from '../images/ball.png'
-import chicken from '../images/chicken.png'
-import yonex from '../images/yonex.png'
-import taycam from '../images/taycam.png'
-import candy from '../images/candy.png'
-import migoi from '../images/midenhat.png'
-import xucxich from '../images/xucxich.png'
-import milk from '../images/milk.png'
-import lays from '../images/lays.png'
-import oreo from '../images/oreos.png'
-import lavie from '../images/lavie.png'
-import sunsilk from '../images/sunsilk.png'
 import gameTitle from '../images/game-title.png'
+import apple from '../images/apple.png'
+import coca from '../images/coca.png'
+import depCam from '../images/dep-cam.png'
+import depVang from '../images/dep-vang.png'
+import kiwi from '../images/kiwi.png'
+import lion from '../images/lion.png'
+import monkey from '../images/monkey.png'
+import pepsi from '../images/pepsi.png'
+import trau from '../images/trau.png'
+import tsTim from '../images/ts_tim.png'
+import tsVang from '../images/ts-vang.png'
+import voi from '../images/voi.png'
+import candy from '../images/candy.png'
 
 
 
@@ -46,19 +46,19 @@ interface DataItem {
 
 const MainPage = () => {
     const [dataList, setDataList] = useState<DataItem[]>([
-        { answer: '**chiaSe', isShow: false, question: question1, gift: tiger },
-        { answer: '****tuOngtac', isShow: false, question: question2, gift: milk },
-        { answer: '******Congdong', isShow: false, question: question3, gift: yonex },
-        { answer: '****stIcker', isShow: false, question: question4, gift: xucxich },
-        { answer: '*****bAiviet', isShow: false, question: question5, gift: chicken },
-        { answer: '**binhLuan', isShow: false, question: question6, gift: candy },
-        { answer: '*xuhuoNg', isShow: false, question: question7, gift: migoi },
-        { answer: '****kiEnthuc', isShow: false, question: question8, gift: taycam },
-        { answer: '******Thaydoi', isShow: false, question: question9, gift: lays },
-        { answer: '*folloW', isShow: false, question: question10, gift: ball },
-        { answer: '****thOngtin', isShow: false, question: question11, gift: oreo },
-        { answer: '****maRketing', isShow: false, question: question12, gift: lavie },
-        { answer: '******Ketban', isShow: false, question: question13, gift: sunsilk },
+        { answer: '**chiaSe', isShow: false, question: question1, gift: trau },
+        { answer: '****tuOngtac', isShow: false, question: question2, gift: apple },
+        { answer: '******Congdong', isShow: false, question: question3, gift: kiwi },
+        { answer: '****stIcker', isShow: false, question: question4, gift: tsVang },
+        { answer: '*****bAiviet', isShow: false, question: question5, gift: coca },
+        { answer: '**binhLuan', isShow: false, question: question6, gift: lion },
+        { answer: '*xuhuoNg', isShow: false, question: question7, gift: tsTim },
+        { answer: '****kiEnthuc', isShow: false, question: question8, gift: voi },
+        { answer: '******Thaydoi', isShow: false, question: question9, gift: pepsi },
+        { answer: '*folloW', isShow: false, question: question10, gift: depVang },
+        { answer: '****thOngtin', isShow: false, question: question11, gift: monkey },
+        { answer: '****maRketing', isShow: false, question: question12, gift: candy },
+        { answer: '******Ketban', isShow: false, question: question13, gift: depCam },
         { answer: '', isShow: false, question: rules, gift: "" },
     ]);
 
@@ -73,27 +73,6 @@ const MainPage = () => {
 
     useEffect(() => {
         const imageSources = [
-            tiger,
-            ball,
-            yonex,
-            taycam,
-            chicken,
-            tiger,
-            ball,
-            yonex,
-            taycam,
-            chicken,
-            tiger,
-            ball,
-            tiger,
-            candy,
-            migoi,
-            xucxich,
-            milk,
-            lays,
-            oreo,
-            lavie,
-            sunsilk,
             question1,
             question2,
             question3,
@@ -107,7 +86,20 @@ const MainPage = () => {
             question11,
             question12,
             question13,
-            gameTitle
+            gameTitle,
+            apple,
+            coca,
+            depCam,
+            depVang,
+            kiwi,
+            lion,
+            monkey,
+            pepsi,
+            trau,
+            tsTim,
+            tsVang,
+            voi,
+            candy,
         ];
     
         Promise.all(imageSources.map(src => preloadImage(src)))
