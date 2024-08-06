@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CrossWord/static/css/main.02de455d.css",
-    "main.js": "/CrossWord/static/js/main.7ba73c6f.js",
+    "main.css": "/CrossWord/static/css/main.f06e3d14.css",
+    "main.js": "/CrossWord/static/js/main.debf70c0.js",
     "static/js/453.6e3fece8.chunk.js": "/CrossWord/static/js/453.6e3fece8.chunk.js",
     "static/media/rules.mp4": "/CrossWord/static/media/rules.1a09bf6ce8f0fe4af721.mp4",
     "static/media/clock-30s.mp4": "/CrossWord/static/media/clock-30s.b508a72b124a0ac744d9.mp4",
@@ -24,6 +24,7 @@
     "static/media/candy.png": "/CrossWord/static/media/candy.dc2d89c9d4ded4468d26.png",
     "static/media/trau.png": "/CrossWord/static/media/trau.4b9f1edb548ddee6f184.png",
     "static/media/sound-gift.mp4": "/CrossWord/static/media/sound-gift.732a077250ae1071ca83.mp4",
+    "static/media/big-gift.gif": "/CrossWord/static/media/big-gift.9e24d1652dad3d283442.gif",
     "static/media/dep-cam.png": "/CrossWord/static/media/dep-cam.8f52569e750538ba395b.png",
     "static/media/dep-vang.png": "/CrossWord/static/media/dep-vang.71c34b65776807cb7d80.png",
     "static/media/ts_tim.png": "/CrossWord/static/media/ts_tim.e5d27f8750a5e7bed05d.png",
@@ -35,15 +36,16 @@
     "static/media/voi.png": "/CrossWord/static/media/voi.79344352e874aabe9689.png",
     "static/media/monkey.png": "/CrossWord/static/media/monkey.98b664f8182df5fd22b7.png",
     "static/media/kiwi.png": "/CrossWord/static/media/kiwi.cc66b5a2cbac72bba1e2.png",
+    "static/media/mac.png": "/CrossWord/static/media/mac.129bc4a56f882f9f7d49.png",
     "static/media/game-title.png": "/CrossWord/static/media/game-title.cea1dbcd845f49fb1e95.png",
     "static/media/gift.png": "/CrossWord/static/media/gift.48a4119681ae55e0e6bd.png",
     "index.html": "/CrossWord/index.html",
-    "main.02de455d.css.map": "/CrossWord/static/css/main.02de455d.css.map",
-    "main.7ba73c6f.js.map": "/CrossWord/static/js/main.7ba73c6f.js.map",
+    "main.f06e3d14.css.map": "/CrossWord/static/css/main.f06e3d14.css.map",
+    "main.debf70c0.js.map": "/CrossWord/static/js/main.debf70c0.js.map",
     "453.6e3fece8.chunk.js.map": "/CrossWord/static/js/453.6e3fece8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.02de455d.css",
-    "static/js/main.7ba73c6f.js"
+    "static/css/main.f06e3d14.css",
+    "static/js/main.debf70c0.js"
   ]
 }
