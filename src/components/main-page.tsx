@@ -34,7 +34,8 @@ import tsTim from '../images/ts_tim.png'
 import tsVang from '../images/ts-vang.png'
 import voi from '../images/voi.png'
 import candy from '../images/candy.png'
-
+import bigGift from '../images/big-gift.gif'
+import macbook from '../images/mac.png'
 
 
 interface DataItem {
@@ -60,6 +61,7 @@ const MainPage = () => {
         { answer: '****maRketing', isShow: false, question: question12, gift: candy },
         { answer: '******Ketban', isShow: false, question: question13, gift: depCam },
         { answer: '', isShow: false, question: rules, gift: "" },
+        { answer: '', isShow: false, question: '', gift: macbook },
     ]);
 
     const preloadImage = (src: string) => {
@@ -100,6 +102,7 @@ const MainPage = () => {
             tsVang,
             voi,
             candy,
+            macbook
         ];
     
         Promise.all(imageSources.map(src => preloadImage(src)))
@@ -157,6 +160,7 @@ const MainPage = () => {
     return (
         <div className='main-page'>
             <div className='rules' onClick={() => openDialog(13)}>Thể lệ</div>
+            <div className='big-gift' onClick={() => openGift(14)}><img src={bigGift} /></div>
             {/* <p className='title'>Trò chơi giải mã ô chữ</p> */}
             <img className='title' src={gameTitle} />
             <div className='cross-word-wrapper'>

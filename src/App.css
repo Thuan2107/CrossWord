@@ -24,6 +24,19 @@
   cursor: pointer;
 }
 
+.big-gift{
+  width: 200px;
+  height: auto;
+  position: absolute;
+  bottom: 20px;
+  right: 100px;
+  padding: 8px 12px;
+}
+
+.big-gift img{
+  width: 100%;
+}
+
 .question-number {
   width: 20px;
   height: 20px;
