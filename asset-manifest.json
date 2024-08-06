@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/CrossWord/static/css/main.02de455d.css",
-    "main.js": "/CrossWord/static/js/main.e3867cdb.js",
-    "static/js/453.c238b0f7.chunk.js": "/CrossWord/static/js/453.c238b0f7.chunk.js",
+    "main.js": "/CrossWord/static/js/main.7ba73c6f.js",
+    "static/js/453.6e3fece8.chunk.js": "/CrossWord/static/js/453.6e3fece8.chunk.js",
     "static/media/rules.mp4": "/CrossWord/static/media/rules.1a09bf6ce8f0fe4af721.mp4",
     "static/media/clock-30s.mp4": "/CrossWord/static/media/clock-30s.b508a72b124a0ac744d9.mp4",
     "static/media/xuhuong.gif": "/CrossWord/static/media/xuhuong.197590878229b00bec2a.gif",
@@ -19,31 +19,31 @@
     "static/media/tangtoc30s.mp4": "/CrossWord/static/media/tangtoc30s.c9a3e39a6d12c4f76057.mp4",
     "static/media/tuongtac.gif": "/CrossWord/static/media/tuongtac.4379880012574135653e.gif",
     "static/media/sticker.gif": "/CrossWord/static/media/sticker.d07187499f71836f14be.gif",
-    "static/media/sunsilk.png": "/CrossWord/static/media/sunsilk.4972d6fa7a3f5d08aa6d.png",
-    "static/media/ball.png": "/CrossWord/static/media/ball.9d311fa007e3d15cba6d.png",
-    "static/media/milk.png": "/CrossWord/static/media/milk.73fafbc33ecbac8cb027.png",
-    "static/media/lays.png": "/CrossWord/static/media/lays.b4850a6c4468f83cb6ea.png",
     "static/media/rules.png": "/CrossWord/static/media/rules.4a15110355af878621ce.png",
-    "static/media/taycam.png": "/CrossWord/static/media/taycam.bfa226070676e186f290.png",
-    "static/media/lavie.png": "/CrossWord/static/media/lavie.403f890e769ff2c331f1.png",
-    "static/media/midenhat.png": "/CrossWord/static/media/midenhat.3e7dd46fd9635e2028ed.png",
-    "static/media/yonex.png": "/CrossWord/static/media/yonex.0e1b7d434f959f69e1c3.png",
-    "static/media/oreos.png": "/CrossWord/static/media/oreos.59abdba43f145b63f384.png",
+    "static/media/ts-vang.png": "/CrossWord/static/media/ts-vang.30be1d6108f77272b077.png",
+    "static/media/candy.png": "/CrossWord/static/media/candy.dc2d89c9d4ded4468d26.png",
+    "static/media/trau.png": "/CrossWord/static/media/trau.4b9f1edb548ddee6f184.png",
     "static/media/sound-gift.mp4": "/CrossWord/static/media/sound-gift.732a077250ae1071ca83.mp4",
-    "static/media/tiger.png": "/CrossWord/static/media/tiger.0deca4efdfda3bec4f9b.png",
-    "static/media/xucxich.png": "/CrossWord/static/media/xucxich.1157b93407638675131f.png",
+    "static/media/dep-cam.png": "/CrossWord/static/media/dep-cam.8f52569e750538ba395b.png",
+    "static/media/dep-vang.png": "/CrossWord/static/media/dep-vang.71c34b65776807cb7d80.png",
+    "static/media/ts_tim.png": "/CrossWord/static/media/ts_tim.e5d27f8750a5e7bed05d.png",
     "static/media/sound-correct.mp4": "/CrossWord/static/media/sound-correct.b5e6f83c9139b94b575a.mp4",
-    "static/media/candy.png": "/CrossWord/static/media/candy.da789ed7835448c7a787.png",
-    "static/media/chicken.png": "/CrossWord/static/media/chicken.0778baa372364cdfee35.png",
+    "static/media/lion.png": "/CrossWord/static/media/lion.a1119bae45a18ce3d053.png",
+    "static/media/coca.png": "/CrossWord/static/media/coca.2e0f9991d3573ae9d41c.png",
+    "static/media/pepsi.png": "/CrossWord/static/media/pepsi.e2efc7f1894a7e3e3d4a.png",
+    "static/media/apple.png": "/CrossWord/static/media/apple.436840c87569a534baf2.png",
+    "static/media/voi.png": "/CrossWord/static/media/voi.79344352e874aabe9689.png",
+    "static/media/monkey.png": "/CrossWord/static/media/monkey.98b664f8182df5fd22b7.png",
+    "static/media/kiwi.png": "/CrossWord/static/media/kiwi.cc66b5a2cbac72bba1e2.png",
     "static/media/game-title.png": "/CrossWord/static/media/game-title.cea1dbcd845f49fb1e95.png",
     "static/media/gift.png": "/CrossWord/static/media/gift.48a4119681ae55e0e6bd.png",
     "index.html": "/CrossWord/index.html",
     "main.02de455d.css.map": "/CrossWord/static/css/main.02de455d.css.map",
-    "main.e3867cdb.js.map": "/CrossWord/static/js/main.e3867cdb.js.map",
-    "453.c238b0f7.chunk.js.map": "/CrossWord/static/js/453.c238b0f7.chunk.js.map"
+    "main.7ba73c6f.js.map": "/CrossWord/static/js/main.7ba73c6f.js.map",
+    "453.6e3fece8.chunk.js.map": "/CrossWord/static/js/453.6e3fece8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.02de455d.css",
-    "static/js/main.e3867cdb.js"
+    "static/js/main.7ba73c6f.js"
   ]
 }
